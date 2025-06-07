@@ -8,6 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -15,28 +20,55 @@
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans">
-    <!-- HEADER -->
-    <header class="bg-white text-gray-800 py-4 shadow-md">
-      <div
-        class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0"
-      >
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-4 md:px-10 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div>
-          <h1 class="text-2xl font-bold text-blue-700">
+          <h1 class="text-2xl sm:text-3xl font-bold text-blue-700">
             House of Videographer
           </h1>
           <p class="text-sm text-gray-500">
             Profesional Event Documentation & Live Streaming
           </p>
         </div>
-        <div class="flex items-center space-x-4">
-        
-          <a
-            href="https://wa.me/qr/MJIPN3O4PWJ4L1"
-            target="_blank"
-            class="bg-blue-300 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-semibold text-sm transition duration-200 shadow"
+
+        <!-- Mobile Menu Button -->
+        <div class="relative md:hidden">
+          <button
+            onclick="document.getElementById('menu-dropdown').classList.toggle('hidden')"
+            class="text-gray-700 hover:text-blue-600 focus:outline-none"
           >
-            Booking via WhatsApp
-          </a>
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+          <div
+            id="menu-dropdown"
+            class="hidden absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-50"
+          >
+            <a
+              href="https://wa.me/qr/MJIPN3O4PWJ4L1"
+              target="_blank"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >Booking via WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/houseofvideographer"
+              target="_blank"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >Instagram</a
+            >
+            <a
+              href="https://www.tiktok.com/@hover.inc"
+              target="_blank"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >TikTok</a
+            >
+            <a
+              href="https://youtube.com/@hoverofficial"
+              target="_blank"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >YouTube</a
+            >
+          </div>
         </div>
       </div>
     </header>
